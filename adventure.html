@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+  </head>
+  <body>
+
+    <div id="main-div">
+      <h1>Yeet Fam Hello</h1> 
+      <button type="button" onclick="onHelloButtonClick();">Hello.</button>
+      <button type="button" onclick="onQuestionButtonClick();">?</button>
+    </div>
+    
+    <script>
+        function onHelloButtonClick() {
+            document.getElementById('main-div').innerHTML = ""; // erase main-div
+            document.getElementById('main-div').innerHTML = "<h1>Sorry mate, wrong choice. GAME OVER</h1>";    
+        }
+        function onQuestionButtonClick() {
+            document.getElementById('main-div').innerHTML = ""; 
+            document.getElementById('main-div').innerHTML = "<h1>YOU WIN!</h1>";    
+        }
+    
+    </script>
+  </body>
+</html>
